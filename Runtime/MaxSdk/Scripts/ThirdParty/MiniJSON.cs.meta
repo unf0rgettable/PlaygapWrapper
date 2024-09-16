@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e41570b70112d43e7ba0baa1b549a608
+labels:
+- al_max
+- al_max_export_path-MaxSdk/Scripts/ThirdParty/MiniJSON.cs
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

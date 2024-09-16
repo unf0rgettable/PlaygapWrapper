@@ -1,0 +1,20 @@
+{
+    "name": "Unfo.PlaygapWrapper.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:69246b39d9114134eb297d386a5dfe4e",
+        "GUID:9cae3e2fa4b80405cba68fd6432bac9a",
+        "GUID:6bfe54803b3c5dc4a9c8c0bf2b31a404",
+        "GUID:cce0d4646ca8b43c4ac2fcfb96d730e5",
+        "GUID:b4f7b59e66f3b42cf95c5358d565c84f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

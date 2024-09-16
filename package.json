@@ -1,0 +1,11 @@
+{
+  "name": "com.unfo.playgapwrapper",
+  "displayName": "Playgap SDK Wrapper",
+  "version": "2.1.3",
+  "unity": "2021.1",
+  "unityRelease": "6f1",
+  "category": "Module",
+  "author": {
+    "name": "Unfo"
+  }
+}
