@@ -14,13 +14,11 @@ namespace LittleBitGames.Ads.AdUnits
 
         public PlaygapRewardedEvents()
         {
-            MaxSdkCallbacks.Rewarded.OnAdRevenuePaidEvent += (s, info) => OnAdRevenuePaid?.Invoke(s, new AdInfo(info));
-            MaxSdkCallbacks.Rewarded.OnAdLoadedEvent += (s, info) => OnAdLoaded?.Invoke(s, new AdInfo(info));
-            MaxSdkCallbacks.Rewarded.OnAdLoadFailedEvent += (s, info) => OnAdLoadFailed?.Invoke(s, new AdErrorInfo(info));
-            MaxSdkCallbacks.Rewarded.OnAdReceivedRewardEvent += (s, reward, info) => OnAdFinished?.Invoke(s, null);
-            MaxSdkCallbacks.Rewarded.OnAdClickedEvent += (s, info) => OnAdClicked?.Invoke(s, new AdInfo(info));
-            MaxSdkCallbacks.Rewarded.OnAdHiddenEvent += (s, info) => OnAdHidden?.Invoke(s, new AdInfo(info));
-            MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent += (s, error, info) => OnAdDisplayFailed?.Invoke(s, new AdErrorInfo(error), new AdInfo(info));
+            Playgap.PlaygapAds.OnShowCompleted += () =>
+            {
+                OnAdRevenuePaid?.Invoke("", null);
+                OnAdFinished?.Invoke("", null);
+            };
         }
     }
 }
