@@ -45,7 +45,6 @@ namespace LittleBitGames.Ads
 
         public void BuildInterAdUnit() =>
             _inter = _adUnitsFactory.CreateInterAdUnit();
-
         public void BuildRewardedAdUnit() =>
             _rewarded = _adUnitsFactory.CreateRewardedAdUnit();
         public void BuildBannerAdUnit() =>

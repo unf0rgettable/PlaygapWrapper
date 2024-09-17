@@ -26,9 +26,7 @@ public class PlaygapInitializer : IMediationNetworkInitializer
     public void Initialize()
     {
         InitMax();
-#if !UNITY_EDITOR
         InitPlaygap();
-#endif
     }
     
     private void InitMax()
