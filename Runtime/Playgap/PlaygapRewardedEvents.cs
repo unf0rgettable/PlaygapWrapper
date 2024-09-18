@@ -14,10 +14,9 @@ namespace LittleBitGames.Ads.AdUnits
 
         public PlaygapRewardedEvents()
         {
-            Playgap.PlaygapAds.OnShowCompleted += () =>
+            Playgap.PlaygapAds.OnUserEarnedReward += (string id) =>
             {
-                OnAdRevenuePaid?.Invoke("", null);
-                OnAdFinished?.Invoke("", null);
+                OnAdFinished?.Invoke(id, null);
             };
         }
     }

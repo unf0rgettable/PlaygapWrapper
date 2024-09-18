@@ -17,7 +17,6 @@ namespace LittleBitGames.Ads.AdUnits
 
             Playgap.PlaygapAds.OnShowCompleted += () =>
             {
-                OnAdRevenuePaid?.Invoke("", null);
                 OnAdFinished?.Invoke("", null);
             };
         }

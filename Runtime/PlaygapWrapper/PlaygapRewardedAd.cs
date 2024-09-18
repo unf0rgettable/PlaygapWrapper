@@ -12,6 +12,6 @@ namespace LittleBitGames.Ads.MediationNetworks.MaxSdk
 
         protected override bool IsAdReady() => true;
         protected override void ShowAd() => Playgap.PlaygapAds.ShowRewarded();
-        public override void Load() => global::MaxSdk.LoadRewardedAd(_key.StringValue);
+        public override void Load() { }
     }
 }

@@ -2,11 +2,9 @@ namespace LittleBitGames.Ads.AdUnits
 {
     public class AdErrorInfo : IAdErrorInfo
     {
-        public AdErrorInfo(MaxSdkBase.ErrorInfo errorInfo)
+        public AdErrorInfo()
         {
-            Message = errorInfo.Message;
-            MediatedNetworkErrorMessage = errorInfo.MediatedNetworkErrorMessage;
-            MediatedNetworkErrorCode = errorInfo.MediatedNetworkErrorCode;
+
         }
         
         public string Message { get; private set; }
