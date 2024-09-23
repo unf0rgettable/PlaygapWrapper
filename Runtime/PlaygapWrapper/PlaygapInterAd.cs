@@ -11,7 +11,31 @@ namespace LittleBitGames.Ads.MediationNetworks.MaxSdk
             new PlaygapInterEvents(), coroutineRunner) => _key = key;
 
         protected override bool IsAdReady() => true;
-        protected override void ShowAd() => Playgap.PlaygapAds.ShowInterstitial();
-        public override void Load() { }
+        protected override void ShowAd()
+        {
+            bool isOffline = false;
+            
+            Playgap.PlaygapAds.ObserveNetwork((b) =>
+            {
+                isOffline = b;
+            });
+            
+            if (isOffline)
+            {
+                Playgap.PlaygapAds.ShowInterstitial();
+            }
+            else
+            {
+                if(global::MaxSdk.IsInterstitialReady(_key.StringValue))
+                    global::MaxSdk.ShowInterstitial(_key.StringValue);
+                else
+                    Playgap.PlaygapAds.ShowInterstitial();
+            }
+        }
+
+        public override void Load()
+        {
+            global::MaxSdk.LoadInterstitial(_key.StringValue);
+        }
     }
 }

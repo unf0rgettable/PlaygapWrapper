@@ -2,7 +2,6 @@ using System;
 using LittleBit.Modules.CoreModule;
 using LittleBitGames.Ads.AdUnits;
 using LittleBitGames.Ads.Configs;
-using LittleBitGames.Ads.MediationNetworks.MaxSdk;
 using LittleBitGames.Environment.Ads;
 using UnityEngine.Scripting;
 

@@ -7,6 +7,20 @@ namespace LittleBitGames.Ads.AdUnits
 
         }
 
+        public AdInfo(MaxSdkBase.AdInfo adInfo)
+        {
+            Revenue = adInfo.Revenue;
+            Placement = adInfo.Placement;
+            RevenuePrecision = adInfo.RevenuePrecision;
+            NetworkName = adInfo.NetworkName;
+            AdFormat = adInfo.AdFormat;
+            NetworkPlacement = adInfo.NetworkPlacement;
+            AdUnitIdentifier = adInfo.AdUnitIdentifier;
+            CreativeIdentifier = adInfo.CreativeIdentifier;
+            DspName = adInfo.DspName;
+        }
+
+        
         public string AdUnitIdentifier { get; }
         public string AdFormat { get; }
         public string NetworkName { get; }
